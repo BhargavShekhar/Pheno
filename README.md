@@ -1,27 +1,27 @@
 # Pheno 🌿
 
-Pheno is an AI-powered educational application designed for students to identify plant species and explore botanical details instantly. Students simply snap or upload a photo of a plant to receive comprehensive scientific and care insights.
+Pheno is a full-stack PERN (PostgreSQL, Express, React, Node.js) educational application designed for students to identify plant species and explore botanical details instantly. Students capture or upload a plant photo to receive scientific taxonomy, growth habits, and ecological insights.
 
 ---
 
 ## Features
 
-* **Image Upload & Capture:** Snap a photo directly or upload existing images of leaves, flowers, or whole plants.
-* **Instant Plant Identification:** Identifies common and scientific (taxonomical) names with high accuracy.
-* **Detailed Botanical Insights:** Generates actionable profiles including:
-  * Family, genus, and native habitat.
-  * Growth habits and sunlight/water requirements.
-  * Fun facts, medicinal uses, and toxicity warnings.
-* **Student Learning Log:** Save identified plants into a personal digital herbarium for study and revision.
+* **Image Upload & Capture:** Upload photos of leaves, flowers, or whole plants directly from the browser.
+* **Instant Plant Identification:** Analyzes visual data to return common and scientific names.
+* **Comprehensive Botanical Profiles:**
+  * Taxonomy: Family, genus, species, and native distribution.
+  * Care & Ecology: Sunlight exposure, water requirements, and soil preferences.
+  * Field Notes: Toxicity warnings, medicinal uses, and biological fun facts.
+* **Student Herbarium:** Authenticated users can bookmark and catalog identified specimens to their personal collection.
 
 ---
 
 ## Tech Stack
 
-* **Frontend:** React / React Native (or Flutter / Next.js)
-* **Backend:** Node.js (Express) / Python (FastAPI)
-* **Machine Learning / Vision:** Custom CNN model / PlantNet API / Google Gemini Vision API
-* **Database:** PostgreSQL / MongoDB / Firebase
+* **Frontend:** React.js, Tailwind CSS (or CSS Modules), Axios
+* **Backend:** Node.js, Express.js
+* **Database:** PostgreSQL (with Prisma or `pg` pool)
+* **Vision / AI Integration:** PlantNet API / Google Gemini Vision API
 
 ---
 
@@ -29,12 +29,15 @@ Pheno is an AI-powered educational application designed for students to identify
 
 ### Prerequisites
 
-* Node.js (v18+) or Python (v3.10+) depending on your setup
-* API keys for vision/identification services
+* [Node.js](https://nodejs.org/) (v18+)
+* [PostgreSQL](https://www.postgresql.org/) running locally or a hosted cloud instance (Neon, Supabase)
+* Vision API Key (e.g., Gemini Vision, PlantNet)
 
-### Installation
+---
+
+### Installation & Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/BhargavShekhar/Pheno.git](https://github.com/BhargavShekhar/Pheno.git)
+   git clone [Pheno Repository](https://github.com/BhargavShekhar/Pheno.git)
    cd Pheno
