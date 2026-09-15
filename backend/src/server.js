@@ -16,5 +16,9 @@ async function main() {
 
 main()
     .catch(error => {
-        console.log(`--- Could not start the server --- \n ${error}`)
+        console.log(`--- Could not start the server --- \n ${error}`);
+        console.log(error);
+    })
+    .finally(() => {
+        process.exit(1); 
     })
