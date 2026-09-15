@@ -5,9 +5,11 @@ export function createExpressApp() {
     const app = express();
 
     app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
+
     app.use(cors());
 
-    app.get("/health", (req, res => res.json({ healthy: true })));
+    app.get("/health", ((req, res) => res.json({ healthy: true })));
 
     app.use((error, req, res, next) => {
         console.log(error);
