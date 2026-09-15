@@ -1,5 +1,5 @@
 import http from "node:http";
-import { createExpressApp } from "./app";
+import { createExpressApp } from "./app/index.js";
 
 import "dotenv/config.js";
 

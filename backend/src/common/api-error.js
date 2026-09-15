@@ -8,7 +8,7 @@ export class ApiError extends Error {
         Error.captureStackTrace(this, this.constructor);
     }
 
-    static badRequest(message="bad request") {
+    static badRequest(message="bad request") {  
         return new ApiError(message, 400);
     }
 
